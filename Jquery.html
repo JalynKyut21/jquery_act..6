@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>JQUERY SESSION</h1>
+        <div class="row">
+            <div class="col-1">
+                <li>
+                    <ul><a href="../pages/accordion.html">Accordion</a></ul>
+                    <ul><a href="../pages/autocomplete.html">AutoComplete</a></ul>
+                    <ul><a href="../pages/button.html">Buton</a></ul>
+                    <ul><a href="../pages/CheckBoxRadio.html">ChechBoxRadio</a></ul>
+                    <ul><a href="../pages/controlgroup.html">Controlgroup</a></ul>
+                    <ul><a href="../pages/datepicker.html">Datepicker</a></ul>
+                    <ul><a href="../pages/dialog.html">Dialog</a></ul>
+                    <ul><a href="../pages/menu.html">Menu</a></ul>
+                    <ul><a href="../pages/progressbar.html">Progress Bar</a></ul>
+                    <ul><a href="../pages/selectmenu.html">Select Menu</a></ul>
+                    <ul><a href="../pages/slider.html">Slider</a></ul>
+                    <ul><a href="../pages/spinner.html">Spinner</a></ul>
+                    <ul><a href="../pages/tabs.html">Tabs</a></ul>
+                    <ul><a href="../pages/tooltip.html">Tooltip</a></ul>
+                </li>
+            </div>
+            <div class="col-2">
+                
+                <button onclick="confirmSubmission();">Click Me</button>
+
+                <button>Jquery Button</button>
+                <button id="idbutton">ID</button>
+                <button class="classbutton">CLASS</button>
+                
+
+                <button id="Information">Click Me to Show Info</button>
+                <button id="hideInfo">Click Me to Show Info</button>
+                <h1 id="showInfo" style="display:none;">You UnHide Me</h1>
+            </div>
+        </div>
+    </div>  
+    
+    <footer>
+        <p>College of Information and Computing Sciences &copy; 2022</p>  
+    </footer>
+
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="../js/jquery-ui.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            
+
+            $("#idbutton").click(function(){
+                alert("ID Button was clicked");
+            });
+
+            $(".classbutton").click(function(){
+                alert("Class Button was clicked");
+            });
+
+            $("#Information").click(function(){
+                $("#showInfo").show();
+            });
+
+            $("#hideInfo").click(function(){
+                $("#showInfo").hide();
+            });
+
+
+
+
+
+        });
+    </script>
+</body>
+</html>

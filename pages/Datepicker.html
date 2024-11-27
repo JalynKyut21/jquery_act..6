@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/jquery-ui.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>JQUERY SESSION DATE-PICKER</h1>
+        <div class="row">
+            <div class="col-1">
+              <li>
+                <ul><a href="accordion.html">Accordion</a></ul>
+                    <ul><a href="../pages/autocomplete.html">AutoComplete</a></ul>
+                    <ul><a href="../pages/button.html">Button</a></ul>
+                    <ul><a href="../pages/CheckBoxRadio.html">CheckBoxRadio</a></ul>
+                    <ul><a href="../pages/controlgroup.html">Controlgroup</a></ul>
+                    <ul><a href="../pages/Datepicker.html">Datepicker</a></ul>
+                    <ul><a href="../pages/dialog.html">Dialog</a></ul>
+                    <ul><a href="../pages/menu.html">Menu</a></ul>
+                    <ul><a href="../pages/progressbar.html">Progress Bar</a></ul>
+                    <ul><a href="../pages/selectmenu.html">Select Menu</a></ul>
+                    <ul><a href="../pages/slider.html">Slider</a></ul>
+                    <ul><a href="../pages/spinner.html">Spinner</a></ul>
+                    <ul><a href="../pages/tabs.html">Tabs</a></ul>
+                    <ul><a href="../pages/tooltip.html">Tooltip</a></ul>
+             </li>
+            </div>
+            <body>
+ 
+                <p>Date: <input type="text" id="datepicker" size="30"></p>
+                 
+                <p>Format options:<br>
+                  <select id="format">
+                    <option value="mm/dd/yy">Default - mm/dd/yy</option>
+                    <option value="yy-mm-dd">ISO 8601 - yy-mm-dd</option>
+                    <option value="d M, y">Short - d M, y</option>
+                    <option value="d MM, y">Medium - d MM, y</option>
+                    <option value="DD, d MM, yy">Full - DD, d MM, yy</option>
+                    <option value="'day' d 'of' MM 'in the year' yy">With text - 'day' d 'of' MM 'in the year' yy</option>
+                  </select>
+                </p>
+                 
+                    
+                  </div>
+            </div>
+        </div>
+    </div>  
+    
+    <footer>
+        <p>College of Information and Computing Sciences &copy; 2022</p>  
+    </footer>
+
+    <script src="../js/jquery-3.7.1.min.js"></script>
+    <script src="../js/jquery-ui.js"></script>
+    <script>
+        $( function() {
+          $( "#datepicker" ).datepicker();
+          $( "#format" ).on( "change", function() {
+            $( "#datepicker" ).datepicker( "option", "dateFormat", $( this ).val() );
+          });
+        } );
+        </script>
+      </head>
+      </head>
+</body>
+</html>
